@@ -74,3 +74,32 @@ h2 {
     line-height: 2;
     color: #52525A;
 }
+@media (max-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px;
+    height: 700px;
+
+  }
+  #card {
+grid-column: 1/6;
+grid-row: 1/1;
+  }
+  #rev1 {
+    grid-column: 3/5;
+  }
+  #rev2 {
+    grid-column: 2/4;
+    grid-row: 3/4;
+  }
+}
+@media (max-width: 640px) {
+    body {
+       display: flex; 
+       flex-direction: column;
+    }
+
+
+}
